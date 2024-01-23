@@ -1,0 +1,19 @@
+#Quiz1Question2.py 
+def Sum(n, m):
+    #begin solution
+    if n<m: 
+        return 0 
+    if m==0:
+        return 0 
+    
+    result=(Sum(n-1, m)+ m)
+    return result 
+
+#driver code 
+def main():
+    n = 10 
+    m = 4 
+    print('total:', Sum(n, m))
+
+if __name__=='__main__': 
+    main()
